@@ -1,0 +1,9 @@
+<?php
+$tuitionFee = 20000;
+
+$commission25 = ($tuitionFee * 25)/100;
+$commission20 = ($tuitionFee * 20)/100;
+$commission15 = ($tuitionFee * 15)/100;
+
+$commission = (20000 <= $tuitionFee) ? "Commission is 25" : (20000 > $tuitionFee && 10000 <= $tuitionFee) ? "Commission is 20" : (10000 > $tuitionFee && 7000 <= $tuitionFee) ? "Commission is 15" : "Invalid input";
+echo $commission;
